@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="https://kit.fontawesome.com/3ff6e89797.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id ="header">
+        <div class = "container">
+            <nav>
+                <img src="img/logo.jpg" class = "logo">
+                <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#Work Experience">Work Experience</a></li>
+                <li><a href="#My Projects">My Projects</a></li>
+                
+                <li><a href="#contact">Contact us</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>I'm</p>
+                <b>Surendra Angadala</b>
+                
+                
+           <h1> Recently Completed Bachelors of science in Computer science at yogi vemana university.
+                    Now I am looking for opportunities in web developer role.As a web Developer, I will be 
+                    responsible for designing and implementing user interfaces for web applications. I am 
+                    should be comfortable working with various programming languages, frameworks, and libraries, 
+                    and have a passion for creating visually appealing and user-friendly interfaces.</h1>
+                <a href="#">Hire Me</a>
+            </div>
+
+        </div>
+
+    </div>
+    <!----about me ------>
+    <div id ="Work Experience">
+        <div class ="container">
+            <div class ="row">
+                <div class ="Experience-col-1">
+                    <img src="/img/lion2.jpg" >
+                </div>
+            <div class ="Experience-col-2">
+                    <h1 class="sub-title "> Work Experience</h1>
+                    <p> Their primary responsibility is to oversee the claims process, ensuring that claims are processed accurately, efficiently, and in compliance with company policies and regulations. Here are some common roles and responsibilities associated with an Executive Claims Officer:
+                        Manage and supervise the claims processing team, providing guidance and support to ensure smooth operations.
+Review and assess complex or high-value claims, making decisions on claim settlements or denials based on policy terms, coverage, and regulations.
+Ensure claims are processed in a timely manner and within established service level agreements (SLAs).
+                    </p>
+                        <div class="Tab-titles">
+                            <p class ="tab-links active-link"onclick="opentab('skills')">skills</p>
+                            <p class ="tab-links"onclick="opentab('Experience')">Experience</p>
+                            <p class ="tab-links"onclick="opentab('Education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id= "skills">
+                                <ul>
+                                    <li><span>UI/UX</span><br>Designing web/app interface</li>
+                                    <li><span>Web development</span><br>web app development</li>
+                                    <li><span>app development </span><br>building Andriod/ios apps </li>
+                                </ul>
+
+                            </div>
+                            <div class="tab-contents"id= "Experience">
+                                <ul>
+                                    <li><span>2018-2019</span><br>FHPL</li>
+                                     </ul>
+
+                            </div>
+                            <div class="tab-contents"id= "Education">
+                                <ul>
+                                    
+                                    <li><span>2015-2018</span><br>Bachelors in Computer science at Yogi vemana univeristy</li>
+                                 </ul>
+
+                            </div>
+            </div>
+                </div>
+        </div>
+    </div>
+    <!--------My Projects------------->
+    <div id="My Projects">
+        <div class="container">
+            <h1 class="subtitles">My Projects</h1>
+            <div class="Projects-lists">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2> form validation </h2>
+                    <p>Implementing the validation using HTML, CSS, and JavaScript.Ensures that the form fields are marked with appropriate input types, attributes, and labels.Validates user input to ensure it meets specified criteria e.g. required fields,password strength
+                        </p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2> Restaurant web development</h2>
+                    <p>Designing the user interface and overall user experience.Choosing colorschemes, typography,and visual elements.Ensuring the website is intuitive,easy to navigate, andvisually appealing.Creating and editing content for the website menu,about us, blog.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                
+
+                </div>
+                 </div>
+        </div>
+        <div id ="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>angadalasurendra@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+91 8019912665</p>
+                        <div class="social-ions">
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                        <a href=""class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="your name" required>
+                            <input type="text" name="Email" placeholder="Enter email" required>
+                            <input type="text" name="Message" row="6" placeholder="Your message" required>
+                            <button type="submit" class="btn btn2">Submit</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    </body>
+</html>
